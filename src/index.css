@@ -11,3 +11,108 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h2 {
+  text-align: center;
+}
+
+.button_wrapper {
+  padding: 0 12px;
+}
+
+.button_wrapper button {
+  margin: 0 2px;
+  font-size: 12px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.button_wrapper button.selected {
+  background-color: rgb(2, 75, 2);
+  color: #fff;
+}
+
+.article_list {
+  list-style-position: inside;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.article_list li {
+  padding: 20px;
+  border: solid 1px #ccc;
+
+  flex: 0 0 27.3333%;
+  background-color: #fff;
+  transition: background-color 0.5s ease-in-out, box-shadow 0.2s ease-in;
+  position: relative;
+  text-align: left;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.article_list li a {
+  text-decoration: none;
+  color: #565ea5;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.article_list li:hover {
+  background-color: #f5f5f5;
+  box-shadow: 2px 10px 10px -12px;
+}
+
+.published_date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 4px 5px;
+  background-color: rgb(56, 57, 57, 0.5);
+  box-shadow: 2px 10px 10px -5px;
+  color: #fff;
+  font-size: 10px;
+}
+
+.container {
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1100px;
+}
+
+
+
+
+.article_details {
+  position: absolute;
+  z-index: 999;
+
+  width: 88%;
+  padding: 20px;
+  border: solid 1px #f8e6e6;
+  left: 0;
+  transform: translate(0%, 0%);
+  box-shadow: -10px 15px 20px -20px;
+  border-top: none;
+  background: hsla(0, 0%, 96%, 1);
+
+  background: linear-gradient(270deg, hsla(0, 0%, 96%, 1) 0%, hsla(0, 60%, 98%, 1) 100%);
+
+  background: -moz-linear-gradient(270deg, hsla(0, 0%, 96%, 1) 0%, hsla(0, 60%, 98%, 1) 100%);
+
+  background: -webkit-linear-gradient(270deg, hsla(0, 0%, 96%, 1) 0%, hsla(0, 60%, 98%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#F5F5F5", endColorstr="#FDF7F7", GradientType=1);
+}
+
+.bg_container {
+  background: url('./images/newsPaper-bg_6.jpg') #f1f1f1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+}
